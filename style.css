@@ -1,0 +1,339 @@
+input {
+	text-align: right;
+	width: 50px;
+}
+
+#emptyFields {
+	color: red;
+	display: none;
+	font-size: 15px;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: -30px;
+}
+
+#bmiStatus {
+	font-weight: bold;
+}
+
+#bmiValue {
+	font-weight: bold;
+}
+
+#lifePart {
+	font-weight: bold;
+}
+
+.foodNo {
+	text-align: center;
+	width: 100px;
+}
+
+.foodItem {
+	width: 120px;
+}
+
+.foodItem input{
+	text-align: left;
+	width:120px;
+}
+
+td {
+	width:80px;
+}
+
+td input {
+	width: 100%;
+}
+
+.foodButton {
+	padding-left: 5px;
+}
+
+tr input {
+	background-color: #E0F9DB;
+}
+
+.noEditRow input{
+	cursor: default;
+	background-color: #7CC271;
+}
+
+#foodLim {
+	cursor: default;
+}
+
+button {
+	cursor: pointer;
+}
+
+.foodAdvice {
+	color: red;
+}
+
+#fatAdvice {
+	display: none;
+	text-align: center;
+}
+
+#carbAdvice {
+	display: none;
+	text-align: center;
+}
+
+#protAdvice {
+	display: none;
+	text-align: center;
+}
+
+#recommendWater {
+	display: none;
+}
+
+#waterError {
+	display: none;
+	color: red;
+}
+
+#consumeWater {
+	background-color: red;
+}
+
+#waterDailyDesc {
+	color: red;
+}
+
+#compRateDesc {
+	display: none;
+}
+
+body{
+	background-color: seagreen;
+}
+
+.felta {
+	font-size: 100px;
+	text-align: center;
+	font-family: georgia;
+	color: #3FDA26;
+	text-decoration: underline;
+}
+
+.feltaMotto {
+	font-size: 40px;
+	text-align: center;
+	font-family: courier;
+	margin-top: -50px;
+	color: #6BDF58;
+}
+
+.bmiDiv {
+	background-color: lightgreen;
+	color: darkred;
+	font-family: sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	padding-bottom: 100px;
+	padding-top: 50px;
+	width: 99.5%;
+	font-size: 25px;
+	border-color: green;
+	border-style: solid;
+}
+
+#resultDesc {
+	display: none;
+	font-size: 20px;
+	color: blue;
+	text-align: center;
+	background-color: lightgreen;
+	border-color: green;
+	border-style: solid;
+	font-family: sans-serif;
+	padding: 30px 20px;
+	margin-top: 30px;
+}
+
+.bmiDiv td {
+	width: 150px;
+	height: 50px;
+}
+
+.bmiDiv table {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bmiDiv input {
+	font-size: 25px;
+	color: darkred;
+	background-color: lightcyan;
+}
+
+.bmiHead {
+	font-family: sans-serif;
+	font-size: 50px;
+}
+
+.bmiButton {
+	background-color: mediumseagreen;
+	border-color: green;
+	float: right;
+	margin-right: 10%;
+	margin-top: 18px;
+	padding: 5px 20px;
+	font-family: verdana;
+	font-size: 30px;
+	color: darkred;
+}
+
+#foodTable {
+	background-color: lightgreen;
+	margin-top: 30px;
+	width: 99.5%;
+	border-color: green;
+	border-style: solid;
+	font-family: verdana;
+	padding-bottom: 50px;
+}
+
+#foodTable table{
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+	color: darkred;
+	font-size: 20px;
+}
+
+#foodTable h2 {
+	font-size: 30px;
+	color: darkred;
+	text-align: center;
+}
+
+#foodTable input {
+	color: darkred;
+	font-size: 20px;
+	width: 100%;
+}
+
+#foodTable button {
+	color: darkred;
+	font-size: 15px;
+	padding: 5px 10px;
+	background-color: mediumseagreen;
+	border-color: green;
+}
+
+.waterContent {
+	background-color: lightgreen;
+	width: 99.5%;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-color: green;
+	margin-top: 30px;
+	text-align: center;
+	color: darkred;
+	font-size: 20px;
+	padding-bottom: 30px;
+	margin-bottom: 40px;
+}
+
+.waterContent button {
+	color: darkred;
+	font-size: 15px;
+	padding: 5px 10px;
+	background-color: mediumseagreen;
+	border-color: green;
+	margin-bottom: 40px;
+	margin-top: -20px;
+}
+
+.waterContent input {
+	color: darkred;
+	font-size: 20px;
+	width: 80px;
+}
+
+.footer {
+	position: fixed;
+	bottom: -17px;
+	right: 0px;
+	font-family: verdana;
+	font-size: 15px;
+	padding: 5px 10px 5px 10px;
+	border-color: #17540B;
+	border-style: solid;
+	border-width: 5px 0px 0px 0px;
+	background-color: #145A32;
+	color: yellowgreen;
+	width: 5000px;
+	text-align: right;
+}
+
+#saveOrRestoreButton {
+	position: fixed;
+	bottom: 3px;
+	left:  5px;
+	z-index: 10;
+	background-color: #17540B;
+	color: yellowgreen;
+	border-color: green;
+}
+
+@media only screen and (max-width: 610px) {
+	#foodTable th{
+	  font-size: 10px;
+	}
+	#foodTable input {
+	  font-size: 10px;
+	}
+	#foodTable h2 {
+	  font-size: 15px;
+	}
+	#foodTable td {
+	  font-size: 10px;
+	}
+	#foodTable button {
+	  font-size: 10px;
+	}
+	.felta {
+	  font-size: 80px;
+	}
+	.feltaMotto {
+	  font-size: 20px;
+	  margin-bottom: -30px;
+	}
+	.footer {
+	  font-size: 13px;
+	  padding-bottom: 8px;
+	}
+	
+	#saveOrRestoreButton {
+		font-size: 12px;
+	}
+
+	@media only screen and (max-width: 350px) {
+	  #foodTable button {
+		  position: relative;
+		  right: 225px;
+		  top: 75px;
+	  }
+	}
+  
+	@media only screen and (max-width: 319px) {
+		body{
+			display: none;
+		}
+	}
+  
+	@media only screen and (max-width: 370px) {
+		#saveOrRestoreButton {
+			bottom: 20px;
+		}
+	}
+  
+}

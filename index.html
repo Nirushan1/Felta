@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Felta - A Delta For Your Food</title>
+		
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		
+		<script src="script.js"></script>
+		
+		<link rel="shortcut icon" href="Logo.jpg" />  
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+	
+		<div class="feltaHead"><h1 class="felta">FELTA</h1><h2 class="feltaMotto">A Delta For Your Food</h2></div>
+
+		<div id="bmiDivId" class="bmiDiv">
+		
+			<!--p class="bmiHead">Enter all fields</p-->
+			
+			<table>
+				<tr><td>Age(yrs):</td><td><input name="age" type="text" /></td></tr>
+				<tr><td>Weight(kg):</td><td><input name="weight" type="text" /></td></tr>
+				<tr><td>Height(m):</td><td><input name="height" type="text" /></td></tr>
+			</table>
+			
+			<a id="bmiButtonLink" ><button id="bmiButtonGo" class="bmiButton" onclick="gofunction()">Go</button></a>
+			<p id="emptyFields">All the fields are mandatory and should be numbers only. Age should not be below one.</p>
+		
+		</div>
+		
+		
+		<div id="resultDesc">
+			<p>Your age shows that that you are <span id="lifePart"></span>.</p>
+			<p>Your calculated BMI is <span id="bmiValue"></span>. </p>
+			<p>This shows that you have <span id="bmiStatus"></span>.</p>
+			
+			<br><p>For you, it is recommended to consume <span id="fat"></span> grams of fats, 
+			<span id="carb"></span> grams of carbohydrates and <span id="prot"></span> grams of proteins per day with proper physical exercises.</p>
+			
+		</div>
+
+
+
+		<div id="foodTable">
+			<br><br><h2>Add your food items per day</h2><br>
+
+			<table class="foodsList">
+			  <tr>
+				<th>Food No</th>
+				<th>Food item</th>
+				<th>Fat(g)</th> 
+				<th>Carbohydrate(g)</th>
+				<th>Protein(g)</th>
+			  </tr>
+			  <tr>
+				<td class="foodNo">1</td>
+				<td class="foodItem"><input id="food1" type="text" /></td>
+				<td class="foodFat"><input id="fat1" type="text" /></td> 
+				<td class="foodCarb"><input id="carb1" type="text" /></td>
+				<td class="foodProt"><input id="prot1" type="text" /></td>
+			  </tr>
+			  <tr>
+				<td class="foodNo">2</td>
+				<td class="foodItem"><input id="food2" type="text" /></td>
+				<td class="foodFat"><input id="fat2" type="text" /></td> 
+				<td class="foodCarb"><input id="carb2" type="text" /></td>
+				<td class="foodProt"><input id="prot2" type="text" /></td>
+			  </tr>
+			  <tr>
+				<td class="foodNo">3</td>
+				<td class="foodItem"><input id="food3" type="text" /></td>
+				<td class="foodFat"><input id="fat3" type="text" /></td> 
+				<td class="foodCarb"><input id="carb3" type="text" /></td>
+				<td class="foodProt"><input id="prot3" type="text" /></td>
+			  </tr>
+			  <tr>
+				<td class="foodNo">4</td>
+				<td class="foodItem"><input id="food4" type="text" /></td>
+				<td class="foodFat"><input id="fat4" type="text" /></td> 
+				<td class="foodCarb"><input id="carb4" type="text" /></td>
+				<td class="foodProt"><input id="prot4" type="text" /></td>
+			  </tr>
+			  <tr>
+				<td class="foodNo">5</td>
+				<td class="foodItem"><input id="food5" type="text" /></td>
+				<td class="foodFat"><input id="fat5" type="text" /></td> 
+				<td class="foodCarb"><input id="carb5" type="text" /></td>
+				<td class="foodProt"><input id="prot5" type="text" /></td>
+			  </tr>
+			  <tr>
+				<td class="foodNo">6</td>
+				<td class="foodItem"><input id="food6" type="text" /></td>
+				<td class="foodFat"><input id="fat6" type="text" /></td> 
+				<td class="foodCarb"><input id="carb6" type="text" /></td>
+				<td class="foodProt"><input id="prot6" type="text" /></td>
+			  </tr>
+			  <tr>
+				<td class="foodNo">7</td>
+				<td class="foodItem"><input id="food7" type="text" /></td>
+				<td class="foodFat"><input id="fat7" type="text" /></td> 
+				<td class="foodCarb"><input id="carb7" type="text" /></td>
+				<td class="foodProt"><input id="prot7" type="text" /></td>
+			  </tr>
+			  <tr>
+				<td class="foodNo">8</td>
+				<td class="foodItem"><input id="food8" type="text" /></td>
+				<td class="foodFat"><input id="fat8" type="text" /></td> 
+				<td class="foodCarb"><input id="carb8" type="text" /></td>
+				<td class="foodProt"><input id="prot8" type="text" /></td>
+			  </tr>
+			  <tr>
+				<td class="foodNo">9</td>
+				<td class="foodItem"><input id="food9" type="text" /></td>
+				<td class="foodFat"><input id="fat9" type="text" /></td> 
+				<td class="foodCarb"><input id="carb9" type="text" /></td>
+				<td class="foodProt"><input id="prot9" type="text" /></td>
+			  </tr>
+			  <tr>
+				<td class="foodNo">10</td>
+				<td class="foodItem"><input id="food10" type="text" /></td>
+				<td class="foodFat"><input id="fat10" type="text" /></td> 
+				<td class="foodCarb"><input id="carb10" type="text" /></td>
+				<td class="foodProt"><input id="prot10" type="text" /></td>
+			  </tr>
+			  <tr>
+				<td class="foodNo">Limit</td>
+				<td class="foodItem"><input id="foodLim" type="text" value="Limit (Editable)" readonly /></td>
+				<td class="foodFat"><input id="fatLim" type="text" value="0" /></td> 
+				<td class="foodCarb"><input id="carbLim" type="text" value="0" /></td>
+				<td class="foodProt"><input id="protLim" type="text" value="0" /></td>
+				<td class="foodButton"><button onclick="sumfunction()">Go</button></td>
+			  </tr>
+			  <tr class="noEditRow">
+				<td class="foodNo">Sum</td>
+				<td class="foodItem"><input id="foodSum" type="text" value="Total Intake" readonly /></td>
+				<td class="foodFat"><input id="fatSum" type="text" readonly /></td> 
+				<td class="foodCarb"><input id="carbSum" type="text" readonly /></td>
+				<td class="foodProt"><input id="protSum" type="text" readonly /></td>
+			  </tr>
+			  <tr class="noEditRow">
+				<td class="foodNo">Overeat</td>
+				<td class="foodItem"><input id="foodExc" type="text" value="Excess Over Limit" readonly /></td>
+				<td class="foodFat"><input id="fatExc" type="text" readonly /></td> 
+				<td class="foodCarb"><input id="carbExc" type="text" readonly /></td>
+				<td class="foodProt"><input id="protExc" type="text" readonly /></td>
+			  </tr>
+			</table>
+
+			<br><div class="foodAdvice"><p id="fatAdvice">Beware! You have exceeded fat intake limit</p>
+			<p id="carbAdvice">Beware! You have exceeded carbohydrate intake limit</p>
+			<p id="protAdvice">Beware! You have exceeded protein intake limit</p></div>
+		</div>
+			
+			
+		<div id="setWaterDiv" class="waterContent">
+			<br><br><p>It is recommended to consume atleast <input id="waterRec" type="text" value="2"/> litres of water per day.<br><br>
+			Enter your time gap for water consumption: <input id="waterGap" type="text" /> hours</p><a id="setWaterButton"><br><button onclick="setWaterTime()">Set</button></a>
+			
+			<div id="recommendWater"><b><p>For every <span id="waterTime"></span> hours, Consume atleast <input id="waterLitre" type="text" /> milli litres of water</p>
+			
+				<p>When consuming water, enter consumed amount and click 'add'. Keep track everyday.</p></b>
+				
+				<br><p>Water consumed now: <input id="waterDrop" type="text" /> ml <br><br><button onclick="addWater()">Add</button></p>
+				<p>Total water consumed today: <span id="waterJug">0</span> ml <br><br><button onclick="clearWater()">Clear</button></p>
+				
+				<p id="compRateDesc">You are consuming water at <span id="compareRate"></span> expected.</p>
+				<p id="waterDailyDesc">Your daily water requirement is <span id="waterDaily">not </span>achieved.</p>
+			
+			</div>
+			<p id="waterError">Water recommendation and time gap should be numbers</p>
+		</div>
+
+		<button id="saveOrRestoreButton" onclick="restoreButton()">Save/Restore</button>
+		<p id="result"></p>
+			
+
+		<br><br>
+		<p class="footer">Made with ❤ by Nirushan (106118075)</p>
+		
+	</body>
+
+</html>
