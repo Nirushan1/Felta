@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
-	<body>
+	<body onload="restoreFn()">
 	
 		<div class="feltaHead"><h1 class="felta">FELTA</h1><h2 class="feltaMotto">A Delta For Your Food</h2></div>
 
@@ -24,7 +24,7 @@
 			<table>
 				<tr><td>Age(yrs):</td><td><input name="age" type="text" /></td></tr>
 				<tr><td>Weight(kg):</td><td><input name="weight" type="text" /></td></tr>
-				<tr><td>Height(m):</td><td><input name="height" type="text" /></td></tr>
+				<tr><td>Height(cm):</td><td><input name="height" type="text" /></td></tr>
 			</table>
 			
 			<a id="bmiButtonLink" ><button id="bmiButtonGo" class="bmiButton" onclick="gofunction()">Go</button></a>
@@ -174,7 +174,7 @@
 			<p id="waterError">Water recommendation and time gap should be numbers</p>
 		</div>
 
-		<button id="saveOrRestoreButton" onclick="restoreButton()">Save/Restore</button>
+		<button id="saveOrRestoreButton" onclick="resetFn()">Reset</button>
 		<p id="result"></p>
 			
 
